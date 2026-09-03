@@ -8,6 +8,12 @@
   "theme_color": "#06111d",
   "icons": [
     {
+      "src": "./control-de-gastos-icono-180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
       "src": "./control-de-gastos-icono-azul.png",
       "sizes": "1024x1024",
       "type": "image/png",
