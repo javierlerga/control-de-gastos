@@ -83,17 +83,41 @@
       font-size: 16px;
     }
 
+    .acciones {
+      margin-top: 28px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .boton-principal {
+      appearance: none;
+      border: 0;
+      border-radius: 18px;
+      padding: 17px 22px;
+      font-size: 18px;
+      font-weight: 800;
+      background: #147efb;
+      color: #fff;
+      box-shadow: 0 12px 30px rgba(20,126,251,.28);
+      cursor: pointer;
+    }
+
+    .instruccion {
+      margin: 0;
+      color: rgba(255,255,255,.72);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
     @keyframes giro {
       to { transform: rotate(360deg); }
     }
   </style>
 
   <script>
-    window.addEventListener("load", function () {
-      setTimeout(function () {
-        window.location.replace('https://script.google.com/macros/s/AKfycbxYcaV2LDsxT7ElUeydxSSz3ATmYU1HjhTz_YJ0IZOy0RBWhNJexInG_r2mzKQjS2Ha/exec');
-      }, 650);
-    });
+    function abrirApp() {
+      window.location.href = 'https://script.google.com/macros/s/AKfycbxYcaV2LDsxT7ElUeydxSSz3ATmYU1HjhTz_YJ0IZOy0RBWhNJexInG_r2mzKQjS2Ha/exec';
+    }
   </script>
 </head>
 
@@ -110,8 +134,16 @@
 
     <p class="lema">Organizá tus gastos. Tomá el control.</p>
 
-    <div class="spinner"></div>
-    <div class="abriendo">Abriendo Control de Gastos…</div>
+    <div class="acciones">
+      <button class="boton-principal" type="button" onclick="abrirApp()">
+        Abrir Control de Gastos
+      </button>
+
+      <p class="instruccion">
+        Para instalar el icono en iPhone: tocá Compartir y después
+        “Agregar a pantalla de inicio” desde esta página.
+      </p>
+    </div>
   </main>
 </body>
 </html>
